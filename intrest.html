@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love</title>
+
+    <!-- AOS Library for Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .g {
+            font-family: Arial, sans-serif;
+            color: white;
+            padding-top: 199px;
+            padding-left: 20px;
+            font-size: 2.2rem;
+        }
+
+        ul {
+            font-family: 'Orbitron', sans-serif;
+            color: white;
+            font-style: italic;
+            padding-left: 40px;
+            font-size: 1.1rem;
+        }
+
+        .game, .photo, .music, .end {
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-bottom: 250px;
+            min-height: 100vh;
+        }
+
+        .game {
+            background-image: url(https://res.cloudinary.com/dez7k4cb1/image/upload/v1743338226/WallpaperDog-10077_nk4igb.png);
+        }
+
+        .photo {
+            background-image: url(https://res.cloudinary.com/dez7k4cb1/image/upload/v1743339579/golden-retriever-royalty-free-image-506756303-1560962726_xuvhlb.avif);
+        }
+
+        .music {
+            background-image: url(https://res.cloudinary.com/dez7k4cb1/image/upload/v1743340322/360_F_223605406_nGKtPp42ZRx4ZxvrcVeT3Ek6V5Uw4ETh_rla0ro.jpg);
+        }
+
+        .end {
+            background-image: url(https://res.cloudinary.com/dez7k4cb1/image/upload/v1743342728/Screen-Shot-2020-02-04-at-3.42.55-PM-900x506_ihtskm.png);
+        }
+    </style>
+</head>
+<body>
+
+    <p style="font-family: 'Courier New', Courier, monospace; text-align: center; color: rgb(0, 0, 0); font-size: 2rem;" data-aos="fade-down" data-aos-duration="1000">
+        I Love
+    </p>
+
+    <div class="game" data-aos="fade-up" data-aos-duration="1500">
+        <h1 class="g">GAMES!</h1>
+        <ul>
+            <li>In the game of life, sometimes you need a reswap to get the best loadout. Adapt, reset, and dominate!</li>
+        </ul>
+    </div>
+
+    <div class="photo" data-aos="fade-right" data-aos-duration="1500">
+        <h1 class="g">PHOTOGRAPHY.</h1>
+        <ul>
+            <li>A photographer doesn’t just capture moments; they freeze emotions, paint with light, and tell stories without words.</li>
+        </ul>
+    </div>
+
+    <div class="music" data-aos="zoom-in" data-aos-duration="1500">
+        <h1 class="g">MUSIC.</h1>
+        <ul>
+            <li>Music is the one language that speaks to the soul when words fall silent.</li>
+        </ul>
+    </div>
+
+    <div class="end" data-aos="fade-left" data-aos-duration="1500">
+        <h1 class="g">MOVIES!</h1>
+        <ul>
+            <li>Movies are the closest we get to living a thousand lives in a single lifetime.</li>
+        </ul>
+    </div>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

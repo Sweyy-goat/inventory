@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-family: Arial, sans-serif;
+            color: white;
+            padding: 250px 150px 40px 200px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .img {
+            background-image: url(https://res.cloudinary.com/dez7k4cb1/image/upload/v1743403883/sidhnew_dew616.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: 100vh;
+            filter: brightness(1) saturate(-4);
+            transition: ease-in;
+            background-color: rgb(0, 0, 0);
+            background-blend-mode: luminosity;
+        }
+
+        .button, .butt {
+            border: 2px solid rgb(0, 0, 0);
+            width: 170px;
+            height: 180px;
+            border-radius: 20px;
+            filter: saturate(0.4);
+            background-color: rgba(0, 0, 0, 0.123);
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .button {
+            margin-left: 570px;
+            margin-top: 30px;
+        }
+
+        .butt {
+            margin-left: 110px;
+            margin-top: 30px;
+        }
+
+        .button:hover, .butt:hover {
+            background-color: rgb(0, 0, 0);
+        }
+
+        img {
+            width: 170px;
+            height: 170px;
+        }
+
+        .links {
+            color: white;
+            padding-left: 15px;
+            font-style: italic;
+            padding-top: 14px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .links a {
+            color: white;
+            font-family: system-ui, sans-serif;
+            text-decoration: none;
+            font-style: italic;
+            padding-left: 45px;
+        }
+
+        hr {
+            margin-top: 10px;
+            margin-right: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="img">
+        <p class="links">
+            My Portfolio 
+            <a href="https://www.instagram.com/_sidh6th._/?hl=en">instagram |</a>
+            <a href="https://github.com/Sweyy-goat/inventory" style="padding-left:15px;">my github</a>
+            <hr>
+        </p>
+
+        <h1 style="letter-spacing: 4px;"data-aos="fade-up">SIDHARTH</h1>
+
+        <div>
+            <a href="intrest.html" class="button" data-aos="zoom-in" data-aos-delay="200">
+                <img src="https://res.cloudinary.com/dez7k4cb1/image/upload/v1743323732/in_tzj0gd.png">
+            </a>
+            <a href="ne.html" class="butt" data-aos="zoom-in" data-aos-delay="400">
+                <img src="https://res.cloudinary.com/dez7k4cb1/image/upload/v1743336890/cartoon-characters-png-44249_dznfzy.png">
+            </a>
+        </div>
+    </div>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
